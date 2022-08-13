@@ -1,0 +1,19 @@
+.lost-img{
+    display: block;
+    margin:  60px auto;
+    width: 550px;
+    height: 450px;
+}
+
+.lost-text {
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 20px;
+    padding-bottom: 46px;
+}
+
+.lost-text a{
+    color: #F1A87E;
+    font-size: 25px;
+}

@@ -1,0 +1,83 @@
+@import "nav.css";
+@import "footer.css";
+
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px; 
+    color: #504E3A;
+}
+
+.product-container{
+    padding: 40px 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height : 400px;
+    margin-right: 40px;
+}
+
+.product-name{
+    width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.product-price {
+    width: 100px;
+    color: #47602E;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.product-image{
+    height: 50%;
+    width: 30%;
+}
+
+.pre-button, .next-button{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-button{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.next-button {
+    right: 0;
+}
+
+.pre-button img, .next-button img {
+    opacity: 0.4;
+}
+
+.pre-button:hover img, .next-button:hover img {
+    opacity: 1;
+}
+
