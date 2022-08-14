@@ -56,9 +56,6 @@ app.post('/signup', (req, res) => {
     else if(!Number(number) || number.length < 10) {
         return res.json({'alert': 'invalid phone number'});
     }
-    else if(!tac) {
-        return res.json({'alert': 'you must agree to our terms and conditions'});
-    }
     
     // storing the users in database
     db.collection('users').doc(email).get()
