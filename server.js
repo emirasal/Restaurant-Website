@@ -16,10 +16,8 @@ admin.initializeApp({
 let db = admin.firestore();
 ///////
 
-
 // declare static path
 let staticPath = path.join(__dirname, "public");
-
 
 // initializing the app
 const app = express();
@@ -181,6 +179,8 @@ app.use((req, res) => {
 })
 ///////
 
-app.listen(3000, () => {
-    console.log('listening on port 3000');
+const port = process.env.port || 3000;
+
+app.listen(port, () => {
+    console.log('listening on port ' + port);
 })
