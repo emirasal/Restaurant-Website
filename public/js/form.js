@@ -17,7 +17,6 @@ const loader = document.querySelector('.loader');
  const email = document.querySelector('#email');
  const password = document.querySelector('#password');
  const number = document.querySelector('#number') || null;
- const tac = document.querySelector('#terms-and-cond') || null;
 
  submitBtn.addEventListener('click', () => {
     if(name != null) { // for signup page
@@ -36,9 +35,6 @@ const loader = document.querySelector('.loader');
         else if(!Number(number.value) || number.value.length < 10) {
             showAlert('invalid phone number');
         }
-        else if(!tac.checked) {
-            showAlert('you must agree to our terms and conditions');
-        }
         else {
             loader.style.display = 'block';
             sendData('/signup', {
@@ -46,7 +42,6 @@ const loader = document.querySelector('.loader');
                 email: email.value,
                 password: password.value,
                 number: number.value,
-                tac: tac.checked
             })
         }
     }
