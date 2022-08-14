@@ -166,6 +166,11 @@ app.post('/order', (req, res) => {
     })
 })
 
+// searching page
+app.get('/search/:key', (req, res) => {
+    res.sendFile(path.join(staticPath, "search.html"));
+})
+
 // 404 route
 app.get('/404', (req, res) => {
     res.sendFile(path.join(staticPath, "404.html"));

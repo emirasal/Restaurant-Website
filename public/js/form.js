@@ -64,3 +64,10 @@ const loader = document.querySelector('.loader');
         }
     }
  })
+
+ // Logging in with the enter key
+ document.addEventListener('keypress', (event) => {
+    if(event.key == 'Enter') {
+        submitBtn.click();
+    }
+  });

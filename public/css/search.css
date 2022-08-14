@@ -2,3 +2,24 @@
     width: 100%;
     padding: 60px 0;
 }
+
+.search-results-for {
+    font-size: 24px;
+    padding-left: 10vw;
+    opacity: 0.7;
+}
+
+.search-results-for span {
+    font-size: 28px;
+    padding-left: 6px;
+    color:brown;
+}
+
+.no-result{
+    font-size: 18px;
+    padding-left: 10vw;
+    padding-top: 3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}

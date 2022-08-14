@@ -1,7 +1,7 @@
 const createSmallCards = (data) => {
     return `
     <div class="sm-product">
-        <img src="img/products/card1.png" class="sm-product-img" alt="">
+        <img src="${data.image}" class="sm-product-img" id="sm-product-img" alt="">
         <div class="sm-text">
             <p class="sm-product-name">${data.name}</p>
         </div>

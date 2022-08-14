@@ -21,7 +21,7 @@ const CreateNav = () => {
             </div>
         </div>
         <ul class="links-container">
-            <li class="link-item"><a href="/" class="link">Home</a></li>
+            <li class="link-item"><a href="/" class="link"><span>Home</span></a></li>
             <li class="link-item pizza"><a href="#pizza-start" class="link">Pizza</a></li>
             <li class="link-item burger"><a href="#burger-start" class="link">Burger</a></li>
             <li class="link-item drink"><a href="#drink-start" class="link">Drink</a></li>
@@ -64,5 +64,18 @@ window.onload = () => {
 }
 
 // search box
-const searchBtn = document.querySelector('search-button');
-const searchBox = document.querySelector('search-box');
+const searchBtn = document.querySelector('.search-button');
+const searchBox = document.querySelector('.search-box');
+// Searching with the mouse click
+searchBtn.addEventListener('click', () => {
+    if(searchBox.value.length){
+        location.href = `/search/${searchBox.value}`;
+    }
+})
+
+// Searching with the enter key
+document.addEventListener('keypress', (event) => {
+    if(event.key == 'Enter') {
+        location.href = `/search/${searchBox.value}`;
+    }
+  });
