@@ -1,6 +1,9 @@
 @import "nav.css";
 @import "footer.css";
 
+body {
+    min-width:1050px;
+}
 
 .product {
     position: relative;
