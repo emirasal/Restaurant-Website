@@ -22,10 +22,10 @@ const CreateNav = () => {
         </div>
         <ul class="links-container">
             <li class="link-item"><a href="/" class="link"><span>Home</span></a></li>
-            <li class="link-item pizza"><a href="#pizza-start" class="link">Pizza</a></li>
-            <li class="link-item burger"><a href="#burger-start" class="link">Burger</a></li>
-            <li class="link-item drink"><a href="#drink-start" class="link">Drink</a></li>
-            <li class="link-item dessert"><a href="#dessert-start" class="link">Dessert</a></li>
+            <li class="link-item pizza"><a href="/#pizza-start" class="link">Pizza</a></li>
+            <li class="link-item burger"><a href="/#burger-start" class="link">Burger</a></li>
+            <li class="link-item drink"><a href="/#drink-start" class="link">Drink</a></li>
+            <li class="link-item dessert"><a href="/#dessert-start" class="link">Dessert</a></li>
         </ul>
     `;
 }
