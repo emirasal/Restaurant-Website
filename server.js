@@ -7,7 +7,6 @@ const path = require('path');
 
 // firebase admin setup for the log in
 let serviceAccount = require("./restaurant-website-aa1d9-firebase-adminsdk-eskfx-e47418863b.json");
-const { resolveSoa } = require('dns');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
